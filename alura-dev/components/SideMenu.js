@@ -2,8 +2,9 @@ import RoundedImageText from "./RoundedImageText";
 
 function SideMenu() {
     return (
-        <aside className="col-span-3">
-            <h2 className="">Menu</h2>
+
+        <div className="">
+            <h2 className="mb-3">Menu</h2>
             <RoundedImageText
                 imgSrc="/images/icon.png"
                 imgAlt=""
@@ -16,7 +17,8 @@ function SideMenu() {
                 text="Comunidade"
                 borderRadius="rounded"
             />
-        </aside>
+        </div>
+
     )
 }
 

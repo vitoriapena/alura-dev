@@ -4,6 +4,8 @@ import Link from 'next/link'
 import SearchBar from '/components/SearchBar'
 import RoundedImageText from '/components/RoundedImageText'
 import SideMenu from '../components/SideMenu'
+import Input from '../components/Input'
+import Select from '../components/Select'
 
 
 export default function Home() {
@@ -49,9 +51,32 @@ export default function Home() {
           </div>
 
         </header>
+        
         <main className="grid grid-cols-12 gap-4">
-          <SideMenu />
+          <aside className="col-span-3 p-5">
+            <SideMenu />
+          </aside>
+
+          <div className="col-span-6 p-5">
+
+          </div>
+          
+          <div className="col-span-3 p-5">
+            <h2 className="mb-3">Seu Projeto</h2>
+            <Input 
+              inputPlaceholder="Nome do seu projeto"
+              className=""
+            />
+            <Input 
+              inputPlaceholder="Descrição do seu projeto"
+              className="mb-10"
+            />
+
+            <h2 className="mt-6 mb-3">Personalização</h2>
+            <Select />
+          </div>
         </main>
+
         <footer className="">
         </footer>
       </div>

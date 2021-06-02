@@ -1,6 +1,6 @@
 import Image from 'next/image'
 
-function RoudendImageText(props) {
+function RoundedImageText(props) {
     const { imgSrc, imgAlt, text, borderRadius } = props;
 
     return (
@@ -20,4 +20,4 @@ function RoudendImageText(props) {
     )
 }
 
-export default RoudendImageText
+export default RoundedImageText
